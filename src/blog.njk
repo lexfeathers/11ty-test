@@ -1,0 +1,11 @@
+---
+layout: base.njk
+title: blog
+tags: page
+---
+
+<ul>
+  {% for post in collections.post | reverse %}
+    {% include 'post-card.njk' %}
+  {% endfor %}
+</ul>

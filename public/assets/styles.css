@@ -1,0 +1,54 @@
+:root {
+  --color-background: #1a1a1a;
+  --color-darkest: #101010;
+  --color-text: antiquewhite;
+  --color-secondary: #ad4151;
+  --color-text-faded: color-mix(in srgb, var(--color-text) 95%, var(--color-background) 5%);
+
+  --page-width: 69rem;
+}
+
+html {
+  background-color: var(--color-darkest);
+}
+
+body {
+  font-family: 'Fira code', monospace;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  font-size: 16pt;
+  max-width: var(--page-width);
+  height: 100vh;
+  margin: auto;
+  padding: 2rem;
+}
+
+header ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+header ul li {
+  display: inline;
+}
+
+a {
+  color: var(--color-secondary);
+}
+
+a:visited {
+  color: var(--color-secondary);
+}
+
+ul:has(.post-card) {
+  list-style: none;
+}
+
+.faded {
+  color: var(--color-text-faded);
+}
+
+.post-card {
+  padding: 1rem;
+  background-color: #1d1d1d;
+}

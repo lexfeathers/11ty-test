@@ -1,0 +1,9 @@
+---
+layout: 'base.njk'
+---
+
+<article>
+  <p class="faded"><em>{{author}}</em> - <time>{{ date | postDate }}</time></p>
+
+  {{content | safe}}
+</article>
